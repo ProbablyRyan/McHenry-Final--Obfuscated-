@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ryan McHenry">
+    <meta name="description" content="A resort in the Swiss Alps">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Crystal Summit Lodge</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1><a href="index.html">Crystal Summit Lodge</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#!">Accommodations</a></li>
+                    <li><a class="current-page" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <img id="hero" src="images/swiss-valley.jpg" alt="A Swiss valley, with pine forrest in the foreground and mountains in the distance.">
+        <h2 class="heading">Contact Us</h2>
+        <p class="subheading">Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us! Required fields marked with a <span>*</span></p>
+        <img id="contact-img" src="images/swiss-sunset.jpg" alt="A lake under a mountain range at sunset.">
+        <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+            <div>
+                <label for="name">Name <span>*</span></label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">Email Address <span>*</span></label>
+                <input type="email" name="email" id="email" required>
+                <label for="number">Phone Number <span>*</span></label>
+                <input type="tel" name="phone" id="phone" required>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Preferred Contact Method</legend>
+                    <input type="radio" name="contact-pref" id="pref-email" checked>
+                    <label for="pref-email">Email</label>
+                    <input type="radio" name="contact-pref" id="pref-phone">
+                    <label for="pref-phone">Phone</label>
+                </fieldset>
+                <label for="comments">Comments <span>*</span></label>
+                <textarea name="comments" id="comments" cols="25" rows="10"></textarea>
+                
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Copyright ©2023 - Crystal Summit Lodge</p>
+        <p>This site is for educational purposes only</p>
+    </footer>
+</body>
+</html>
